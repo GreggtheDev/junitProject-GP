@@ -31,13 +31,7 @@
             <scope>test</scope>
         </dependency>
 
-        <!-- Additional testing dependencies -->
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter</artifactId>
-            <version>RELEASE</version>
-            <scope>test</scope>
-        </dependency>
+        <!-- TestNG dependency (if needed, otherwise it can be removed) -->
         <dependency>
             <groupId>org.testng</groupId>
             <artifactId>testng</artifactId>
