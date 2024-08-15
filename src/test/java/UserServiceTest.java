@@ -42,7 +42,7 @@ public class UserServiceTest {
 
     // Tests for loginUser method
 
-    @Test
+    @org.testng.annotations.Test
     public void testLoginUser_positive() {
         User result = userService.loginUser("john_doe", "password123");
         assertNotNull(result);
