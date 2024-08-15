@@ -2,8 +2,6 @@ package org.example;
 
 import org.junit.Before;
 import org.junit.Test;
-import org.junit.jupiter.api.Test;
-
 import static org.junit.Assert.*;
 
 public class UserServiceTest {
@@ -18,9 +16,7 @@ public class UserServiceTest {
         userService.registerUser(user1);
     }
 
-    // Tests for registerUser method
-
-    @org.junit.jupiter.api.Test
+    @Test
     public void testRegisterUser_positive() {
         User newUser = new User("jane_doe", "password456", "jane@example.com");
         boolean result = userService.registerUser(newUser);
@@ -40,9 +36,7 @@ public class UserServiceTest {
         assertFalse(result); // Null user should not be registered
     }
 
-    // Tests for loginUser method
-
-    @org.testng.annotations.Test
+    @Test
     public void testLoginUser_positive() {
         User result = userService.loginUser("john_doe", "password123");
         assertNotNull(result);
@@ -66,8 +60,6 @@ public class UserServiceTest {
         User result = userService.loginUser(null, null);
         assertNull(result); // Null values should not log in any user
     }
-
-    // Tests for updateUserProfile method
 
     @Test
     public void testUpdateUserProfile_positive() {

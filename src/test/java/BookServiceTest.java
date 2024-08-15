@@ -4,6 +4,7 @@ import org.junit.Before;
 import org.junit.Test;
 import org.mockito.Mockito;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import static org.junit.Assert.*;
@@ -20,8 +21,9 @@ public class BookServiceTest {
     @Before
     public void setUp() {
         bookService = new BookService();
-        book1 = new Book("Effective Java", "Joshua Bloch", "Programming");
-        book2 = new Book("Clean Code", "Robert C. Martin", "Programming");
+        // Updated constructor calls to match the available constructors in the Book class
+        book1 = new Book("Effective Java", "Joshua Bloch", "Programming", 45.0, new ArrayList<>());
+        book2 = new Book("Clean Code", "Robert C. Martin", "Programming", 40.0, new ArrayList<>());
         bookService.addBook(book1);
         bookService.addBook(book2);
 
@@ -29,6 +31,7 @@ public class BookServiceTest {
         when(user.getPurchasedBooks()).thenReturn(List.of(book1));
     }
 
+    // Tests for searchBook method
     @Test
     public void testSearchBook_positive() {
         List<Book> result = bookService.searchBook("Effective");
@@ -48,6 +51,7 @@ public class BookServiceTest {
         assertEquals(2, result.size()); // Both books match the empty string
     }
 
+    // Tests for purchaseBook method
     @Test
     public void testPurchaseBook_positive() {
         assertTrue(bookService.purchaseBook(user, book1));
@@ -55,7 +59,7 @@ public class BookServiceTest {
 
     @Test
     public void testPurchaseBook_negative() {
-        Book nonExistentBook = new Book("Nonexistent Book", "Unknown", "Fiction");
+        Book nonExistentBook = new Book("Nonexistent Book", "Unknown", "Fiction", 0.0, new ArrayList<>());
         assertFalse(bookService.purchaseBook(user, nonExistentBook));
     }
 
@@ -64,6 +68,7 @@ public class BookServiceTest {
         assertFalse(bookService.purchaseBook(null, book1));
     }
 
+    // Tests for addBookReview method
     @Test
     public void testAddBookReview_positive() {
         boolean result = bookService.addBookReview(user, book1, "Great book!");
@@ -73,7 +78,7 @@ public class BookServiceTest {
 
     @Test
     public void testAddBookReview_negative() {
-        Book nonPurchasedBook = new Book("Clean Code", "Robert C. Martin", "Programming");
+        Book nonPurchasedBook = new Book("Clean Code", "Robert C. Martin", "Programming", 40.0, new ArrayList<>());
         boolean result = bookService.addBookReview(user, nonPurchasedBook, "Good book");
         assertFalse(result);
     }
@@ -88,9 +93,10 @@ public class BookServiceTest {
         assertFalse(result); // Null review should not be added
     }
 
+    // Tests for addBook method
     @Test
     public void testAddBook_positive() {
-        Book newBook = new Book("Java Concurrency in Practice", "Brian Goetz", "Programming");
+        Book newBook = new Book("Java Concurrency in Practice", "Brian Goetz", "Programming", 55.0, new ArrayList<>());
         boolean result = bookService.addBook(newBook);
         assertTrue(result);
         assertTrue(bookService.searchBook("Java Concurrency").contains(newBook));
@@ -108,6 +114,7 @@ public class BookServiceTest {
         assertFalse(result); // Null book should not be added
     }
 
+    // Tests for removeBook method
     @Test
     public void testRemoveBook_positive() {
         boolean result = bookService.removeBook(book1);
@@ -117,7 +124,7 @@ public class BookServiceTest {
 
     @Test
     public void testRemoveBook_negative() {
-        Book nonExistentBook = new Book("Nonexistent Book", "Unknown", "Fiction");
+        Book nonExistentBook = new Book("Nonexistent Book", "Unknown", "Fiction", 0.0, new ArrayList<>());
         boolean result = bookService.removeBook(nonExistentBook);
         assertFalse(result);
     }

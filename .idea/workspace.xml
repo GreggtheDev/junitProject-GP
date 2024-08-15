@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Add unit tests for UserService class&#10;&#10;- Implemented tests for registerUser, loginUser, and updateUserProfile methods.&#10;- Covered positive, negative, and edge case scenarios.&#10;- Utilized JUnit for assertions to validate method behavior.&#10;- Ensured comprehensive testing of user registration, login, and profile update functionalities.">
+    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Update pom.xml to include JUnit 4 and Mockito dependencies&#10;&#10;- Added JUnit 4 dependency (junit:junit:4.13.2) for unit testing.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking in tests.&#10;- Retained existing dependencies for JUnit Jupiter and TestNG.&#10;- Ensured compatibility with JUnit 4 tests in the project.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BookServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/BookServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +109,7 @@
       <option name="presentableId" value="Default" />
       <updated>1723604218496</updated>
       <workItem from="1723604219655" duration="609000" />
-      <workItem from="1723687105845" duration="1072000" />
+      <workItem from="1723687105845" duration="1374000" />
     </task>
     <task id="LOCAL-00001" summary="Add unit tests for BookService class&#10;&#10;- Implemented tests for searchBook, purchaseBook, addBookReview, addBook, and removeBook methods.&#10;- Included positive, negative, and edge case scenarios.&#10;- Utilized JUnit for test assertions and Mockito for mocking dependencies.&#10;- Ensured tests run independently with proper setup and teardown methods.">
       <option name="closed" value="true" />
@@ -134,7 +135,23 @@
       <option name="project" value="LOCAL" />
       <updated>1723688234363</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;&#10;    &lt;groupId&gt;org.example&lt;/groupId&gt;&#10;    &lt;artifactId&gt;JunitProject&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;    &lt;properties&gt;&#10;        &lt;maven.compiler.source&gt;11&lt;/maven.compiler.source&gt;&#10;        &lt;maven.compiler.target&gt;11&lt;/maven.compiler.target&gt;&#10;        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;&#10;    &lt;/properties&gt;&#10;&#10;    &lt;dependencies&gt;&#10;        &lt;!-- JUnit 4 dependency --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;junit&lt;/groupId&gt;&#10;            &lt;artifactId&gt;junit&lt;/artifactId&gt;&#10;            &lt;version&gt;4.13.2&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;&#10;        &lt;!-- Mockito dependency --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;            &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;            &lt;version&gt;3.12.4&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;&#10;        &lt;!-- Additional testing dependencies --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;            &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;&#10;            &lt;version&gt;RELEASE&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.testng&lt;/groupId&gt;&#10;            &lt;artifactId&gt;testng&lt;/artifactId&gt;&#10;            &lt;version&gt;RELEASE&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;&#10;&lt;/project&gt;">
+      <option name="closed" value="true" />
+      <created>1723688465119</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1723688465119</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Update pom.xml to include JUnit 4 and Mockito dependencies&#10;&#10;- Added JUnit 4 dependency (junit:junit:4.13.2) for unit testing.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking in tests.&#10;- Retained existing dependencies for JUnit Jupiter and TestNG.&#10;- Ensured compatibility with JUnit 4 tests in the project.">
+      <option name="closed" value="true" />
+      <created>1723688490326</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1723688490326</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -143,6 +160,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add unit tests for BookService class&#10;&#10;- Implemented tests for searchBook, purchaseBook, addBookReview, addBook, and removeBook methods.&#10;- Included positive, negative, and edge case scenarios.&#10;- Utilized JUnit for test assertions and Mockito for mocking dependencies.&#10;- Ensured tests run independently with proper setup and teardown methods." />
     <MESSAGE value="Add unit tests for UserService class&#10;&#10;- Implemented tests for registerUser, loginUser, and updateUserProfile methods.&#10;- Covered positive, negative, and edge case scenarios.&#10;- Utilized JUnit for assertions to validate method behavior.&#10;- Ensured comprehensive testing of user registration, login, and profile update functionalities." />
-    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests for UserService class&#10;&#10;- Implemented tests for registerUser, loginUser, and updateUserProfile methods.&#10;- Covered positive, negative, and edge case scenarios.&#10;- Utilized JUnit for assertions to validate method behavior.&#10;- Ensured comprehensive testing of user registration, login, and profile update functionalities." />
+    <MESSAGE value="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#10;&lt;project xmlns=&quot;http://maven.apache.org/POM/4.0.0&quot;&#10;         xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;&#10;         xsi:schemaLocation=&quot;http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd&quot;&gt;&#10;    &lt;modelVersion&gt;4.0.0&lt;/modelVersion&gt;&#10;&#10;    &lt;groupId&gt;org.example&lt;/groupId&gt;&#10;    &lt;artifactId&gt;JunitProject&lt;/artifactId&gt;&#10;    &lt;version&gt;1.0-SNAPSHOT&lt;/version&gt;&#10;&#10;    &lt;properties&gt;&#10;        &lt;maven.compiler.source&gt;11&lt;/maven.compiler.source&gt;&#10;        &lt;maven.compiler.target&gt;11&lt;/maven.compiler.target&gt;&#10;        &lt;project.build.sourceEncoding&gt;UTF-8&lt;/project.build.sourceEncoding&gt;&#10;    &lt;/properties&gt;&#10;&#10;    &lt;dependencies&gt;&#10;        &lt;!-- JUnit 4 dependency --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;junit&lt;/groupId&gt;&#10;            &lt;artifactId&gt;junit&lt;/artifactId&gt;&#10;            &lt;version&gt;4.13.2&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;&#10;        &lt;!-- Mockito dependency --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.mockito&lt;/groupId&gt;&#10;            &lt;artifactId&gt;mockito-core&lt;/artifactId&gt;&#10;            &lt;version&gt;3.12.4&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;&#10;        &lt;!-- Additional testing dependencies --&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.junit.jupiter&lt;/groupId&gt;&#10;            &lt;artifactId&gt;junit-jupiter&lt;/artifactId&gt;&#10;            &lt;version&gt;RELEASE&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;        &lt;dependency&gt;&#10;            &lt;groupId&gt;org.testng&lt;/groupId&gt;&#10;            &lt;artifactId&gt;testng&lt;/artifactId&gt;&#10;            &lt;version&gt;RELEASE&lt;/version&gt;&#10;            &lt;scope&gt;test&lt;/scope&gt;&#10;        &lt;/dependency&gt;&#10;    &lt;/dependencies&gt;&#10;&#10;&lt;/project&gt;" />
+    <MESSAGE value="Update pom.xml to include JUnit 4 and Mockito dependencies&#10;&#10;- Added JUnit 4 dependency (junit:junit:4.13.2) for unit testing.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking in tests.&#10;- Retained existing dependencies for JUnit Jupiter and TestNG.&#10;- Ensured compatibility with JUnit 4 tests in the project." />
+    <option name="LAST_COMMIT_MESSAGE" value="Update pom.xml to include JUnit 4 and Mockito dependencies&#10;&#10;- Added JUnit 4 dependency (junit:junit:4.13.2) for unit testing.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking in tests.&#10;- Retained existing dependencies for JUnit Jupiter and TestNG.&#10;- Ensured compatibility with JUnit 4 tests in the project." />
   </component>
 </project>
