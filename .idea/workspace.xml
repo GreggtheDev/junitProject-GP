@@ -4,13 +4,22 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/test/java/BookServiceTest.java" afterDir="false" />
+    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Add unit tests for UserService class&#10;&#10;- Implemented tests for registerUser, loginUser, and updateUserProfile methods.&#10;- Covered positive, negative, and edge case scenarios.&#10;- Utilized JUnit for assertions to validate method behavior.&#10;- Ensured comprehensive testing of user registration, login, and profile update functionalities.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -78,11 +87,25 @@
       <option name="presentableId" value="Default" />
       <updated>1723604218496</updated>
       <workItem from="1723604219655" duration="609000" />
-      <workItem from="1723687105845" duration="454000" />
+      <workItem from="1723687105845" duration="742000" />
     </task>
+    <task id="LOCAL-00001" summary="Add unit tests for BookService class&#10;&#10;- Implemented tests for searchBook, purchaseBook, addBookReview, addBook, and removeBook methods.&#10;- Included positive, negative, and edge case scenarios.&#10;- Utilized JUnit for test assertions and Mockito for mocking dependencies.&#10;- Ensured tests run independently with proper setup and teardown methods.">
+      <option name="closed" value="true" />
+      <created>1723687932709</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1723687932709</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Add unit tests for BookService class&#10;&#10;- Implemented tests for searchBook, purchaseBook, addBookReview, addBook, and removeBook methods.&#10;- Included positive, negative, and edge case scenarios.&#10;- Utilized JUnit for test assertions and Mockito for mocking dependencies.&#10;- Ensured tests run independently with proper setup and teardown methods." />
+    <MESSAGE value="Add unit tests for UserService class&#10;&#10;- Implemented tests for registerUser, loginUser, and updateUserProfile methods.&#10;- Covered positive, negative, and edge case scenarios.&#10;- Utilized JUnit for assertions to validate method behavior.&#10;- Ensured comprehensive testing of user registration, login, and profile update functionalities." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add unit tests for UserService class&#10;&#10;- Implemented tests for registerUser, loginUser, and updateUserProfile methods.&#10;- Covered positive, negative, and edge case scenarios.&#10;- Utilized JUnit for assertions to validate method behavior.&#10;- Ensured comprehensive testing of user registration, login, and profile update functionalities." />
   </component>
 </project>
