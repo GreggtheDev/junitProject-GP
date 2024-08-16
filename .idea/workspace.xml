@@ -4,8 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Update pom.xml to fix dependency issues and ensure compatibility&#10;&#10;- Removed JUnit Jupiter dependency to resolve ambiguous import issues between JUnit 4 and JUnit 5.&#10;- Retained JUnit 4 dependency (junit:junit:4.13.2) for consistent testing across the project.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking support in unit tests.&#10;- Kept TestNG dependency for additional testing flexibility if required.&#10;- Ensured the project compiles and runs all tests successfully with the updated dependencies.">
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Refactored project name">
+      <change afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,6 +39,7 @@
   &quot;associatedIndex&quot;: 4
 }</component>
   <component name="ProjectId" id="2kdCladMOOhSy3yEhlawCUkKY6i" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -46,6 +48,7 @@
   "keyToString": {
     "JUnit.UserServiceTest.executor": "Run",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "node.js.detected.package.eslint": "true",
@@ -107,7 +110,8 @@
       <option name="presentableId" value="Default" />
       <updated>1723604218496</updated>
       <workItem from="1723604219655" duration="609000" />
-      <workItem from="1723687105845" duration="1693000" />
+      <workItem from="1723687105845" duration="1763000" />
+      <workItem from="1723768121779" duration="806000" />
     </task>
     <task id="LOCAL-00001" summary="Add unit tests for BookService class&#10;&#10;- Implemented tests for searchBook, purchaseBook, addBookReview, addBook, and removeBook methods.&#10;- Included positive, negative, and edge case scenarios.&#10;- Utilized JUnit for test assertions and Mockito for mocking dependencies.&#10;- Ensured tests run independently with proper setup and teardown methods.">
       <option name="closed" value="true" />
@@ -165,7 +169,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723688906345</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Refactored project name">
+      <option name="closed" value="true" />
+      <created>1723689118774</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1723689118774</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -178,6 +190,7 @@
     <MESSAGE value="Update pom.xml to include JUnit 4 and Mockito dependencies&#10;&#10;- Added JUnit 4 dependency (junit:junit:4.13.2) for unit testing.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking in tests.&#10;- Retained existing dependencies for JUnit Jupiter and TestNG.&#10;- Ensured compatibility with JUnit 4 tests in the project." />
     <MESSAGE value="Fix test class issues and update constructor calls in BookServiceTest&#10;&#10;- Corrected constructor calls in BookServiceTest to match the available constructors in the Book class.&#10;- Cleaned up imports in BookServiceTest and UserServiceTest to resolve ambiguous import issues.&#10;- Ensured that only JUnit 4 dependencies are used in the test classes for consistency.&#10;- Verified that all tests now compile and run correctly." />
     <MESSAGE value="Update pom.xml to fix dependency issues and ensure compatibility&#10;&#10;- Removed JUnit Jupiter dependency to resolve ambiguous import issues between JUnit 4 and JUnit 5.&#10;- Retained JUnit 4 dependency (junit:junit:4.13.2) for consistent testing across the project.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking support in unit tests.&#10;- Kept TestNG dependency for additional testing flexibility if required.&#10;- Ensured the project compiles and runs all tests successfully with the updated dependencies." />
-    <option name="LAST_COMMIT_MESSAGE" value="Update pom.xml to fix dependency issues and ensure compatibility&#10;&#10;- Removed JUnit Jupiter dependency to resolve ambiguous import issues between JUnit 4 and JUnit 5.&#10;- Retained JUnit 4 dependency (junit:junit:4.13.2) for consistent testing across the project.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking support in unit tests.&#10;- Kept TestNG dependency for additional testing flexibility if required.&#10;- Ensured the project compiles and runs all tests successfully with the updated dependencies." />
+    <MESSAGE value="Refactored project name" />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactored project name" />
   </component>
 </project>
