@@ -4,9 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Refactored project name">
-      <change afterPath="$PROJECT_DIR$/src/test/java/UserTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="3372fd37-bc9e-4a48-adab-875bdd43ed0b" name="Changes" comment="Add JUnit tests for User class&#10;&#10;- Implemented unit tests for all methods in the User class.&#10;- Added positive, negative, and edge case tests for:&#10;  - getUsername(), setUsername()&#10;  - getPassword(), setPassword()&#10;  - getEmail(), setEmail()&#10;  - getPurchasedBooks(), setPurchasedBooks()&#10;- Used @Before annotation to initialize test data.&#10;- Included assertions to verify expected behavior.">
+      <change afterPath="$PROJECT_DIR$/src/test/java/BookTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +110,7 @@
       <updated>1723604218496</updated>
       <workItem from="1723604219655" duration="609000" />
       <workItem from="1723687105845" duration="1763000" />
-      <workItem from="1723768121779" duration="806000" />
+      <workItem from="1723768121779" duration="999000" />
     </task>
     <task id="LOCAL-00001" summary="Add unit tests for BookService class&#10;&#10;- Implemented tests for searchBook, purchaseBook, addBookReview, addBook, and removeBook methods.&#10;- Included positive, negative, and edge case scenarios.&#10;- Utilized JUnit for test assertions and Mockito for mocking dependencies.&#10;- Ensured tests run independently with proper setup and teardown methods.">
       <option name="closed" value="true" />
@@ -177,7 +176,15 @@
       <option name="project" value="LOCAL" />
       <updated>1723689118774</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Add JUnit tests for User class&#10;&#10;- Implemented unit tests for all methods in the User class.&#10;- Added positive, negative, and edge case tests for:&#10;  - getUsername(), setUsername()&#10;  - getPassword(), setPassword()&#10;  - getEmail(), setEmail()&#10;  - getPurchasedBooks(), setPurchasedBooks()&#10;- Used @Before annotation to initialize test data.&#10;- Included assertions to verify expected behavior.">
+      <option name="closed" value="true" />
+      <created>1723769170115</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1723769170115</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +198,7 @@
     <MESSAGE value="Fix test class issues and update constructor calls in BookServiceTest&#10;&#10;- Corrected constructor calls in BookServiceTest to match the available constructors in the Book class.&#10;- Cleaned up imports in BookServiceTest and UserServiceTest to resolve ambiguous import issues.&#10;- Ensured that only JUnit 4 dependencies are used in the test classes for consistency.&#10;- Verified that all tests now compile and run correctly." />
     <MESSAGE value="Update pom.xml to fix dependency issues and ensure compatibility&#10;&#10;- Removed JUnit Jupiter dependency to resolve ambiguous import issues between JUnit 4 and JUnit 5.&#10;- Retained JUnit 4 dependency (junit:junit:4.13.2) for consistent testing across the project.&#10;- Added Mockito dependency (org.mockito:mockito-core:3.12.4) for mocking support in unit tests.&#10;- Kept TestNG dependency for additional testing flexibility if required.&#10;- Ensured the project compiles and runs all tests successfully with the updated dependencies." />
     <MESSAGE value="Refactored project name" />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactored project name" />
+    <MESSAGE value="Add JUnit tests for User class&#10;&#10;- Implemented unit tests for all methods in the User class.&#10;- Added positive, negative, and edge case tests for:&#10;  - getUsername(), setUsername()&#10;  - getPassword(), setPassword()&#10;  - getEmail(), setEmail()&#10;  - getPurchasedBooks(), setPurchasedBooks()&#10;- Used @Before annotation to initialize test data.&#10;- Included assertions to verify expected behavior." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add JUnit tests for User class&#10;&#10;- Implemented unit tests for all methods in the User class.&#10;- Added positive, negative, and edge case tests for:&#10;  - getUsername(), setUsername()&#10;  - getPassword(), setPassword()&#10;  - getEmail(), setEmail()&#10;  - getPurchasedBooks(), setPurchasedBooks()&#10;- Used @Before annotation to initialize test data.&#10;- Included assertions to verify expected behavior." />
   </component>
 </project>
